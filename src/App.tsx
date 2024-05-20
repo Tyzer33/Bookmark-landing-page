@@ -1,7 +1,9 @@
+import AppContent from "./components/AppContent.tsx"
+
 function App() {
 
   return (
-    <div />
+    <AppContent />
   )
 }
 
