@@ -16,4 +16,8 @@
     --color-error: 250, 87, 87;
     --color-border: 145, 148, 161;
   }
+
+  body {
+    @apply font-default bg-root text-body;
+  }
 }
