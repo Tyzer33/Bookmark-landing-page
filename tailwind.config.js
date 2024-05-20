@@ -9,6 +9,7 @@ export default {
       textColor: {
         heading: 'rgba(var(--color-text-heading))',
         body: 'rgba(var(--color-text-body))',
+        alternative: 'rgba(var(--color-text-alternative))',
       },
       borderColor: {
         default: 'rgba(var(--color-border))',

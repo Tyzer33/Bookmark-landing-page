@@ -6,13 +6,16 @@
 
 @layer base {
   :root {
-    --color-bg-root: 252, 252, 254;
+    --color-bg-root: 255, 255, 255;
     --color-bg-primary: 83, 104, 223;
     --color-bg-accent: 250, 87, 87;
     --color-bg-nav-menu: 37, 43, 70;
     --color-bg-footer: 37, 43, 70;
+
     --color-text-body: 145, 148, 161;
     --color-text-heading: 37, 43, 70;
+    --color-text-alternative: 255, 255, 255;
+
     --color-error: 250, 87, 87;
     --color-border: 145, 148, 161;
   }
