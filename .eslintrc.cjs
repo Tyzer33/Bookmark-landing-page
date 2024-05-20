@@ -9,6 +9,7 @@ module.exports = {
     'airbnb/hooks',
     'prettier',
     'plugin:react/jsx-runtime',
+    'airbnb-typescript',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -17,10 +18,6 @@ module.exports = {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
-    ],
-    'react/jsx-filename-extension': [
-      2,
-      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
   },
 }
