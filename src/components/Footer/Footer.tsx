@@ -1,6 +1,5 @@
-import facebookIcon from '../../assets/icon-facebook.svg'
-import twitterIcon from '../../assets/icon-twitter.svg'
 import BookmarkLogo from '../../common/BookmarkLogo'
+import SocialLinks from '../../common/SocialLinks'
 
 function Footer() {
   const navLinks = ['features', 'pricing', 'contact']
@@ -17,14 +16,7 @@ function Footer() {
           ))}
         </ul>
       </nav>
-      <footer className="center mt-1 flex items-center justify-center gap-10 py-[42px]">
-        <a href="#">
-          <img className="w-6" src={facebookIcon} alt="facebook icon" />
-        </a>
-        <a href="#">
-          <img className="w-6" src={twitterIcon} alt="twitter icon" />
-        </a>
-      </footer>
+      <SocialLinks className="mt-1 py-[2.625rem]" />
     </footer>
   )
 }

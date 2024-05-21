@@ -1,7 +1,7 @@
 import closeIcon from '../../assets/icon-close.svg'
-import twitterIcon from '../../assets/icon-twitter.svg'
-import facebookIcon from '../../assets/icon-facebook.svg'
+
 import BookmarkLogo from '../../common/BookmarkLogo'
+import SocialLinks from '../../common/SocialLinks'
 
 function NavMenu({ setIsMenuOpen }: Props) {
   const navLinks = ['features', 'pricing', 'contact']
@@ -35,14 +35,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
           LOGIN
         </button>
       </div>
-      <footer className="center flex items-center justify-center gap-10 py-12 ">
-        <a href="#">
-          <img className="w-6" src={facebookIcon} alt="facebook icon" />
-        </a>
-        <a href="#">
-          <img className="w-6" src={twitterIcon} alt="twitter icon" />
-        </a>
-      </footer>
+      <SocialLinks className="py-12" />
     </section>
   )
 }
