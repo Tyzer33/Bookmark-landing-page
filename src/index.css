@@ -16,8 +16,10 @@
     --color-text-heading: 37, 43, 70;
     --color-text-alternative: 255, 255, 255;
 
+    --color-border-default: 145, 148, 161;
+    --color-border-alternative: 255, 255, 255;
+
     --color-error: 250, 87, 87;
-    --color-border: 145, 148, 161;
   }
 
   body {

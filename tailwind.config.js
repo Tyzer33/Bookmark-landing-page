@@ -13,6 +13,7 @@ export default {
       },
       borderColor: {
         default: 'rgba(var(--color-border))',
+        alternative: 'rgba(var(--color-border-alternative))',
       },
       backgroundColor: {
         root: 'rgba(var(--color-bg-root))',
@@ -22,6 +23,9 @@ export default {
       },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
+      },
+      borderWidth: {
+        1: '1px',
       },
     },
   },
