@@ -29,6 +29,6 @@
   }
 
   body {
-    @apply bg-root font-default text-body;
+    @apply bg-root font-default text-[0.9375rem] leading-[1.5625rem] text-body;
   }
 }
