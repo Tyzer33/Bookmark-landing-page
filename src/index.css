@@ -9,17 +9,23 @@
     --color-bg-root: 255, 255, 255;
     --color-bg-primary: 83, 104, 223;
     --color-bg-accent: 250, 87, 87;
+    --color-bg-button-primary: 83, 104, 223;
+    --color-bg-button-secondary: 247, 247, 247;
     --color-bg-nav-menu: 37, 43, 70;
     --color-bg-footer: 37, 43, 70;
 
     --color-text-body: 145, 148, 161;
     --color-text-heading: 37, 43, 70;
     --color-text-alternative: 255, 255, 255;
+    --color-text-button-primary: 255, 255, 255;
+    --color-text-button-secondary: 37, 43, 70;
 
     --color-border-default: 145, 148, 161;
     --color-border-alternative: 255, 255, 255;
 
     --color-error: 250, 87, 87;
+
+    --color-shadow: 37, 43, 70, 0.2;
   }
 
   body {
