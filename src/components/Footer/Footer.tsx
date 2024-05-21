@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="flex flex-col items-center bg-footer text-center text-alternative">
-      <BookmarkLogo className="mb-[2.375rem] mt-10" theme="text-light" />
+      <BookmarkLogo className="mb-[2.125rem] mt-10" theme="text-light" />
       <nav>
         <ul className="space-y-8">
           {navLinks.map((link) => (
@@ -16,7 +16,7 @@ function Footer() {
           ))}
         </ul>
       </nav>
-      <SocialLinks className="mt-1 py-[2.625rem]" />
+      <SocialLinks className="py-11" />
     </footer>
   )
 }
