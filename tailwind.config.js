@@ -20,6 +20,7 @@ export default {
         primary: 'rgba(var(--color-bg-primary))',
         accent: 'rgba(var(--color-bg-accent))',
         'nav-menu': 'rgba(var(--color-bg-nav-menu))',
+        footer: 'rgba(var(--color-bg-footer))',
       },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
