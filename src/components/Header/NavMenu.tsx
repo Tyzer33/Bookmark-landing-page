@@ -1,7 +1,7 @@
-import logoBookmarkLight from '../../assets/logo-bookmark-light.svg'
 import closeIcon from '../../assets/icon-close.svg'
 import twitterIcon from '../../assets/icon-twitter.svg'
 import facebookIcon from '../../assets/icon-facebook.svg'
+import BookmarkLogo from '../../common/BookmarkLogo'
 
 function NavMenu({ setIsMenuOpen }: Props) {
   const navLinks = ['features', 'pricing', 'contact']
@@ -9,7 +9,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
   return (
     <section className="text absolute inset-0 flex flex-col items-stretch bg-nav-menu/95 px-8 tracking-widest text-alternative">
       <header className="my-10 flex justify-between">
-        <img src={logoBookmarkLight} alt="Main site logo for Bookmark" />
+        <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>
           <img className="w-4" src={closeIcon} alt="Icon to close the menu" />
         </button>
