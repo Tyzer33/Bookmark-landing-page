@@ -8,11 +8,9 @@ function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header
-      className={`mx-[1.625rem] my-8 flex items-center justify-between ${isMenuOpen ? 'hidden' : ''}`}
-    >
+    <header className={`mx-8 my-10 flex items-center justify-between`}>
       <img src={logoBookmark} alt="Main site logo for Bookmark" />
-      <button className="h-3" type="button" onClick={() => setIsMenuOpen(true)}>
+      <button type="button" onClick={() => setIsMenuOpen(true)}>
         <img src={hamburgerIcon} alt="Icon to access the menu" />
       </button>
       {isMenuOpen &&
