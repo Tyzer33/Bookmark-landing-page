@@ -1,7 +1,24 @@
+import resolveConfig from 'tailwindcss/resolveConfig'
+import config from '../../tailwind.config.ts'
+
+const { backgroundColor, textColor } = resolveConfig(config).theme
+
 const bookmarkLogoThemes = {
-  default: ['#5267DF', '#FFF', '#242A45'],
-  'text-light': ['#5267DF', '#FFF', '#FFF'],
-  'full-light': ['#FFF', '#252B46', '#FFF'],
+  default: [
+    backgroundColor.secondary,
+    backgroundColor.primary,
+    textColor.secondary,
+  ],
+  'text-light': [
+    backgroundColor.secondary,
+    backgroundColor.primary,
+    textColor.tertiary,
+  ],
+  'full-light': [
+    backgroundColor.primary,
+    backgroundColor.tertiary,
+    textColor.tertiary,
+  ],
 }
 
 function BookmarkLogo({ className = '', theme = 'default' }: Props) {
