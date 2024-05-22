@@ -16,12 +16,9 @@ function NavMenu({ setIsMenuOpen }: Props) {
       </header>
       <div className="flex-1">
         <nav>
-          <ul className="border-t-1 border-alternative/25">
+          <ul className="divide-y-1 divide-alternative/25 border-y-1 border-alternative/25">
             {navLinks.map((link) => (
-              <li
-                key={link}
-                className="border-b-1 border-alternative/25 py-4 text-center text-xl"
-              >
+              <li key={link} className="py-4 text-center text-xl">
                 <a href={`#${link}`}>{link.toUpperCase()}</a>
               </li>
             ))}
