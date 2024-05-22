@@ -7,7 +7,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
   const navLinks = ['features', 'pricing', 'contact']
 
   return (
-    <section className="bg-tertiary/95 text-tertiary absolute inset-0 flex flex-col items-stretch px-8 tracking-widest">
+    <section className="bg-tertiary/95 text-tertiary fixed inset-0 flex flex-col items-stretch px-8 tracking-widest">
       <header className="my-10 flex justify-between">
         <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>

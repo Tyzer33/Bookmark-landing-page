@@ -1,11 +1,15 @@
 import hamburgerIcon from '../../assets/icon-hamburger.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import NavMenu from './NavMenu'
 import BookmarkLogo from '../../common/BookmarkLogo'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.classList.toggle('overflow-hidden', isMenuOpen)
+  }, [isMenuOpen])
 
   return (
     <header className={`mx-8 my-10 flex items-center justify-between`}>
