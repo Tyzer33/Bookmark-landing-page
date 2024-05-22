@@ -3,41 +3,30 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      colors: {
-        error: 'rgba(var(--color-error))',
+      backgroundColor: {
+        primary: 'hsla(var(--bg-primary))',
+        secondary: 'hsla(var(--bg-secondary))',
+        tertiary: 'hsla(var(--bg-tertiary))',
+        accent: 'hsla(var(--bg-accent))',
+        test: 'hsla(var(--test))',
       },
       textColor: {
-        heading: 'rgba(var(--color-text-heading))',
-        body: 'rgba(var(--color-text-body))',
-        alternative: 'rgba(var(--color-text-alternative))',
-        button: {
-          primary: 'rgba(var(--color-text-button-primary))',
-          secondary: 'rgba(var(--color-text-button-secondary))',
-        },
+        primary: 'hsla(var(--text-primary))',
+        secondary: 'hsla(var(--text-secondary))',
+        tertiary: 'hsla(var(--text-tertiary))',
       },
       borderColor: {
-        default: 'rgba(var(--color-border))',
-        alternative: 'rgba(var(--color-border-alternative))',
+        primary: 'hsla(var(--border-primary))',
+        secondary: 'hsla(var(--border-secondary))',
       },
-      backgroundColor: {
-        root: 'rgba(var(--color-bg-root))',
-        primary: 'rgba(var(--color-bg-primary))',
-        button: {
-          primary: 'rgba(var(--color-bg-button-primary))',
-          secondary: 'rgba(var(--color-bg-button-secondary))',
-        },
-        accent: 'rgba(var(--color-bg-accent))',
-        'nav-menu': 'rgba(var(--color-bg-nav-menu))',
-        footer: 'rgba(var(--color-bg-footer))',
+      boxShadowColor: {
+        default: 'hsla(var(--shadow))',
       },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
       },
       borderWidth: {
         1: '1px',
-      },
-      boxShadowColor: {
-        default: 'rgba(var(--color-shadow))',
       },
     },
   },

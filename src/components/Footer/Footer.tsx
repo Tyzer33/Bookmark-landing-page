@@ -5,7 +5,7 @@ function Footer() {
   const navLinks = ['features', 'pricing', 'contact']
 
   return (
-    <footer className="flex flex-col items-center bg-footer text-center text-alternative">
+    <footer className="bg-tertiary text-tertiary flex flex-col items-center text-center">
       <BookmarkLogo className="mb-[2.125rem] mt-10" theme="text-light" />
       <nav>
         <ul className="space-y-8">

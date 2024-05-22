@@ -7,7 +7,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
   const navLinks = ['features', 'pricing', 'contact']
 
   return (
-    <section className="text absolute inset-0 flex flex-col items-stretch bg-nav-menu/95 px-8 tracking-widest text-alternative">
+    <section className="bg-tertiary/95 text-tertiary absolute inset-0 flex flex-col items-stretch px-8 tracking-widest">
       <header className="my-10 flex justify-between">
         <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>
@@ -16,7 +16,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
       </header>
       <div className="flex-1">
         <nav>
-          <ul className="divide-y-1 divide-alternative/25 border-y-1 border-alternative/25">
+          <ul className="divide-secondary border-secondary divide-y-1 border-y-1">
             {navLinks.map((link) => (
               <li key={link} className="py-4 text-center text-xl">
                 <a href={`#${link}`}>{link.toUpperCase()}</a>
@@ -25,7 +25,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
           </ul>
         </nav>
         <button
-          className="mt-6 w-full rounded-md border-2 border-alternative py-2 text-xl font-medium"
+          className="mt-6 w-full rounded-md border-2 border-current py-2 text-xl font-medium"
           type="button"
           onClick={() => console.log('login')}
         >
