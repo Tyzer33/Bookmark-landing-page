@@ -7,17 +7,24 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'airbnb',
     'airbnb/hooks',
-    'prettier',
     'plugin:react/jsx-runtime',
     'airbnb-typescript',
+    'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
+    ],
+    'react/jsx-filename-extension': [
+      2,
+      { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
   },
 }
