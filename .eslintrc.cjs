@@ -26,5 +26,11 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
+    'react/require-default-props': [
+      2,
+      {
+        functions: 'defaultArguments',
+      },
+    ],
   },
 }

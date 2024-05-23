@@ -1,5 +1,5 @@
 import Download from './Download/Download'
-import FAQ from './FAQ/FAQ'
+import Faq from './Faq/Faq'
 import Features from './Features/Features'
 import Presentation from './Presentation/Presentation'
 
@@ -9,7 +9,7 @@ function MainContent() {
       <Presentation />
       <Features />
       <Download />
-      <FAQ />
+      <Faq />
     </main>
   )
 }

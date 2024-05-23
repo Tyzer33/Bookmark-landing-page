@@ -6,10 +6,10 @@ function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
     <Tag
       className={`center flex items-center justify-center gap-10 ${className}`}
     >
-      <a href="#">
+      <a href="http://facebook.com">
         <img className="w-6" src={facebookIcon} alt="facebook icon" />
       </a>
-      <a href="#">
+      <a href="http://twitter.com">
         <img className="w-6" src={twitterIcon} alt="twitter icon" />
       </a>
     </Tag>

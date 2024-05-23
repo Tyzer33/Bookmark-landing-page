@@ -1,10 +1,7 @@
-import AppContent from "./components/AppContent.tsx"
+import AppContent from './components/AppContent'
 
 function App() {
-
-  return (
-    <AppContent />
-  )
+  return <AppContent />
 }
 
 export default App

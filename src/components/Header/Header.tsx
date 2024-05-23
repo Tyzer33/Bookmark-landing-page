@@ -1,6 +1,6 @@
-import hamburgerIcon from '../../assets/icon-hamburger.svg'
 import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
+import hamburgerIcon from '../../assets/icon-hamburger.svg'
 import NavMenu from './NavMenu'
 import BookmarkLogo from '../../common/BookmarkLogo'
 

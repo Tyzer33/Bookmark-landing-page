@@ -1,4 +1,5 @@
-function FAQ() {
+function Faq() {
   return <div>FAQ</div>
 }
-export default FAQ
+
+export default Faq

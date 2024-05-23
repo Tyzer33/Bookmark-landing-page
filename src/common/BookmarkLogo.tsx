@@ -1,5 +1,5 @@
 import resolveConfig from 'tailwindcss/resolveConfig'
-import config from '../../tailwind.config.ts'
+import config from '../../tailwind.config'
 
 const { backgroundColor, textColor } = resolveConfig(config).theme
 
