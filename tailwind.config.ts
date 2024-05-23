@@ -22,6 +22,9 @@ export default {
       boxShadowColor: {
         default: 'hsla(var(--shadow))',
       },
+      margin: {
+        mobile: '2rem',
+      },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
       },

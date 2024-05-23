@@ -12,7 +12,7 @@ function Header() {
   }, [isMenuOpen])
 
   return (
-    <header className={`mx-8 my-10 flex items-center justify-between`}>
+    <header className="mx-mobile my-10 flex items-center justify-between">
       <BookmarkLogo />
       <button type="button" onClick={() => setIsMenuOpen(true)}>
         <img src={hamburgerIcon} alt="Icon to access the menu" />
