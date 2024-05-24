@@ -1,13 +1,23 @@
+import { useEffect } from 'react'
 import closeIcon from '../../assets/icon-close.svg'
-
 import BookmarkLogo from '../../common/BookmarkLogo'
 import SocialLinks from '../../common/SocialLinks'
 
 function NavMenu({ setIsMenuOpen }: Props) {
   const navLinks = ['features', 'pricing', 'contact']
 
+  useEffect(() => {
+    const root = document.body.querySelector('div#root')
+
+    root?.setAttribute('inert', 'true')
+
+    return () => {
+      root?.removeAttribute('inert')
+    }
+  }, [])
+
   return (
-    <section className="bg-tertiary/95 text-tertiary fixed inset-0 flex flex-col items-stretch px-8 tracking-widest">
+    <section className="fixed inset-0 flex flex-col items-stretch bg-tertiary/95 px-8 tracking-widest text-tertiary">
       <header className="my-10 flex justify-between">
         <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>
@@ -16,7 +26,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
       </header>
       <div className="flex-1">
         <nav>
-          <ul className="divide-secondary border-secondary divide-y-1 border-y-1">
+          <ul className="divide-y-1 divide-secondary border-y-1 border-secondary">
             {navLinks.map((link) => (
               <li key={link} className="py-4 text-center text-xl">
                 <a href={`#${link}`}>{link.toUpperCase()}</a>
