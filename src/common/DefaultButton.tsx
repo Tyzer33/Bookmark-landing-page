@@ -7,7 +7,7 @@ function DefaultButton({ children, className = '', theme = 'primary' }: Props) {
 
   return (
     <div
-      className={`${className} ${themes[theme]} rounded-md bg-secondary px-4 py-3 shadow-lg shadow-default`}
+      className={`${className} ${themes[theme]} rounded-md px-4 py-3 shadow-lg shadow-default`}
     >
       {children}
     </div>
