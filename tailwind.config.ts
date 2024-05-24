@@ -8,7 +8,6 @@ export default {
         secondary: 'hsla(var(--bg-secondary))',
         tertiary: 'hsla(var(--bg-tertiary))',
         accent: 'hsla(var(--bg-accent))',
-        test: 'hsla(var(--test))',
       },
       textColor: {
         primary: 'hsla(var(--text-primary))',
