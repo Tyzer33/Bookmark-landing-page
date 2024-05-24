@@ -23,6 +23,27 @@
   }
 
   body {
-    @apply text-primary bg-primary font-default text-[0.9375rem] leading-[1.5625rem];
+    @apply bg-primary font-default text-[0.9375rem] leading-[1.5625rem] text-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium text-secondary;
+  }
+
+  h1 {
+    @apply text-3xl leading-10;
+  }
+
+  h2 {
+    @apply text-2xl leading-[1.875rem];
+  }
+
+  h3 {
+    @apply text-2xl leading-[1.875rem];
   }
 }
