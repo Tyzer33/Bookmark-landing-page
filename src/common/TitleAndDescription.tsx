@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react'
+import { useNumOfLines } from '../customHooks'
 
 function TitleAndDescription({
   children,
@@ -6,30 +6,13 @@ function TitleAndDescription({
   type: Type = 'h2',
   title,
 }: Props) {
-  const [lineCount, setLineCount] = useState(1)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useLayoutEffect(() => {
-    function handleResize() {
-      if (!ref.current) return
-      const { lineHeight, height } = getComputedStyle(ref.current)
-      setLineCount(parseInt(height, 10) / parseInt(lineHeight, 10))
-    }
-
-    handleResize()
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  const { lineCount, lineRef } = useNumOfLines()
 
   return (
     <div
       className={`mx-mobile space-y-4 ${lineCount > 1 ? 'space-y-4' : 'space-y-[.625rem]'}`}
     >
-      <Type id={id} ref={ref}>
+      <Type id={id} ref={lineRef}>
         {title}
       </Type>
       <p>{children}</p>
