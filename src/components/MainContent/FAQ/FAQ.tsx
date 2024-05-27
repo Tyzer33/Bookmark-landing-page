@@ -5,7 +5,7 @@ import Dropdown from './Dropdown'
 
 function Faq() {
   return (
-    <section>
+    <section className="mt-[8.75rem]">
       <TitleAndDescription title="Frequently Asked Questions">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
@@ -17,7 +17,7 @@ function Faq() {
           </Dropdown>
         ))}
       </div>
-      <DefaultButton className="m-auto w-fit px-6">More Info</DefaultButton>
+      <DefaultButton className="mx-auto w-fit px-6">More Info</DefaultButton>
     </section>
   )
 }

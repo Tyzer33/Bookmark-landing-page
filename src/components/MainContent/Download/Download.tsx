@@ -4,7 +4,7 @@ import Card from './Card'
 
 function Download() {
   return (
-    <section className="space-y-10">
+    <section className="mt-[9.375rem] space-y-10">
       <TitleAndDescription title="Download the extension">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.

@@ -4,7 +4,7 @@ import TitleAndDescription from '../../../common/TitleAndDescription'
 
 function Presentation() {
   return (
-    <section className="space-y-12">
+    <section className="mt-10 space-y-12">
       <div className="relative pb-[.625rem]">
         <img
           className="m-auto h-[15.625rem]"
