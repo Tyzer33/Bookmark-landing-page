@@ -9,6 +9,18 @@ export default {
         tertiary: 'hsla(var(--bg-tertiary))',
         accent: 'hsla(var(--bg-accent))',
       },
+      stroke: {
+        primary: 'hsla(var(--bg-primary))',
+        secondary: 'hsla(var(--bg-secondary))',
+        tertiary: 'hsla(var(--bg-tertiary))',
+        accent: 'hsla(var(--bg-accent))',
+      },
+      fill: {
+        primary: 'hsla(var(--bg-primary))',
+        secondary: 'hsla(var(--bg-secondary))',
+        tertiary: 'hsla(var(--bg-tertiary))',
+        accent: 'hsla(var(--bg-accent))',
+      },
       textColor: {
         primary: 'hsla(var(--text-primary))',
         secondary: 'hsla(var(--text-secondary))',
