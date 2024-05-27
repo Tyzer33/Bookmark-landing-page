@@ -1,9 +1,8 @@
 import BookmarkLogo from '../../common/BookmarkLogo'
 import SocialLinks from '../../common/SocialLinks'
+import { navLinks } from '../../data'
 
 function MainFooter() {
-  const navLinks = ['features', 'pricing', 'contact']
-
   return (
     <section className="flex flex-col items-center bg-tertiary text-center text-tertiary">
       <BookmarkLogo className="mb-[2.125rem] mt-10" theme="text-light" />

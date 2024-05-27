@@ -2,10 +2,9 @@ import { useEffect } from 'react'
 import closeIcon from '../../assets/icon-close.svg'
 import BookmarkLogo from '../../common/BookmarkLogo'
 import SocialLinks from '../../common/SocialLinks'
+import { navLinks } from '../../data'
 
 function NavMenu({ setIsMenuOpen }: Props) {
-  const navLinks = ['features', 'pricing', 'contact']
-
   useEffect(() => {
     const root = document.body.querySelector('div#root')
 

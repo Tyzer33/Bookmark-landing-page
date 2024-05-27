@@ -1,26 +1,6 @@
-import googleLogo from '../../../assets/logo-chrome.svg'
-import firefoxLogo from '../../../assets/logo-firefox.svg'
-import operaLogo from '../../../assets/logo-opera.svg'
 import TitleAndDescription from '../../../common/TitleAndDescription'
+import { download } from '../../../data'
 import Card from './Card'
-
-const downloadData = [
-  {
-    logo: googleLogo,
-    browser: 'Chrome',
-    minVersion: 62,
-  },
-  {
-    logo: firefoxLogo,
-    browser: 'Firefox',
-    minVersion: 55,
-  },
-  {
-    logo: operaLogo,
-    browser: 'Opera',
-    minVersion: 46,
-  },
-]
 
 function Download() {
   return (
@@ -30,7 +10,7 @@ function Download() {
         got a favourite you’d like us to prioritize.
       </TitleAndDescription>
       <div className="mx-12 space-y-10">
-        {downloadData.map(({ logo, browser, minVersion }) => (
+        {download.map(({ logo, browser, minVersion }) => (
           <Card
             key={browser}
             logo={logo}
