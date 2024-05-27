@@ -5,7 +5,7 @@ import Presentation from './Presentation/Presentation'
 
 function MainContent() {
   return (
-    <main>
+    <main className="flex flex-col items-center text-center">
       <Presentation />
       <Features />
       <Download />
