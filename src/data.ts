@@ -6,7 +6,20 @@ import illustrationFeaturesTab1 from './assets/illustration-features-tab-1.svg'
 import illustrationFeaturesTab2 from './assets/illustration-features-tab-2.svg'
 import illustrationFeaturesTab3 from './assets/illustration-features-tab-3.svg'
 
-export const navLinks = ['features', 'pricing', 'contact']
+export const navLinks = [
+  {
+    id: 1,
+    name: 'Features',
+  },
+  {
+    id: 2,
+    name: 'Pricing',
+  },
+  {
+    id: 3,
+    name: 'Contact',
+  },
+]
 
 export const questions = [
   {
@@ -37,16 +50,19 @@ export const questions = [
 
 export const download = [
   {
+    id: 1,
     logo: googleLogo,
     browser: 'Chrome',
     minVersion: 62,
   },
   {
+    id: 2,
     logo: firefoxLogo,
     browser: 'Firefox',
     minVersion: 55,
   },
   {
+    id: 3,
     logo: operaLogo,
     browser: 'Opera',
     minVersion: 46,
@@ -55,18 +71,21 @@ export const download = [
 
 export const tabs = [
   {
+    id: 1,
     button: 'Simple Bookmarking',
     image: illustrationFeaturesTab1,
     title: 'Bookmark in one click',
     desc: 'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.',
   },
   {
+    id: 2,
     button: 'Speedy Searching',
     image: illustrationFeaturesTab2,
     title: 'Intelligent search',
     desc: 'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.',
   },
   {
+    id: 3,
     button: 'Easy Sharing',
     image: illustrationFeaturesTab3,
     title: 'Share your bookmarks',

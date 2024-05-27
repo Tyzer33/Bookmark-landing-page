@@ -10,9 +10,9 @@ function Download() {
         got a favourite you’d like us to prioritize.
       </TitleAndDescription>
       <div className="mx-12 space-y-10">
-        {download.map(({ logo, browser, minVersion }) => (
+        {download.map(({ id, logo, browser, minVersion }) => (
           <Card
-            key={browser}
+            key={id}
             logo={logo}
             browser={browser}
             minVersion={minVersion}

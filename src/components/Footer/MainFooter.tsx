@@ -8,9 +8,9 @@ function MainFooter() {
       <BookmarkLogo className="mb-[2.125rem] mt-10" theme="text-light" />
       <nav>
         <ul className="space-y-8">
-          {navLinks.map((link) => (
-            <li className="text-[.9375rem]" key={link}>
-              <a href={`#${link}`}>{link.toUpperCase()}</a>
+          {navLinks.map(({ id, name }) => (
+            <li className="text-[.9375rem]" key={id}>
+              <a href={`#${name}`}>{name.toUpperCase()}</a>
             </li>
           ))}
         </ul>

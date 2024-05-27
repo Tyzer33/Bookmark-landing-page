@@ -19,7 +19,7 @@ function Features() {
         <div className="mx-mobile flex flex-col divide-y-1 divide-primary border-y-1 border-primary">
           {tabs.map((tab) => (
             <TabButton
-              key={tab.button}
+              key={tab.id}
               name={tab.button}
               selected={selectedTab.button}
               handleClick={() => setSelectedTab(tab)}
