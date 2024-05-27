@@ -9,8 +9,11 @@ function Features() {
   const { image, title, desc } = selectedTab
 
   return (
-    <section className="mt-[9.375rem] space-y-10">
-      <TitleAndDescription title="Features">
+    <section
+      className="mt-[9.375rem] space-y-10"
+      aria-labelledby="featuresTitle"
+    >
+      <TitleAndDescription id="featuresTitle" title="Features">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.

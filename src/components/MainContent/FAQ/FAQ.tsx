@@ -5,8 +5,8 @@ import Dropdown from './Dropdown'
 
 function Faq() {
   return (
-    <section className="mt-[8.75rem]">
-      <TitleAndDescription title="Frequently Asked Questions">
+    <section className="mt-[8.75rem]" aria-labelledby="faqTitle">
+      <TitleAndDescription id="faqTitle" title="Frequently Asked Questions">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </TitleAndDescription>
