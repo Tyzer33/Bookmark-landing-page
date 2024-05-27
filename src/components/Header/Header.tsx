@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { createPortal } from 'react-dom'
 import hamburgerIcon from '../../assets/icon-hamburger.svg'
 import NavMenu from './NavMenu'
@@ -6,10 +6,6 @@ import BookmarkLogo from '../../common/BookmarkLogo'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  useEffect(() => {
-    document.body.classList.toggle('overflow-hidden', isMenuOpen)
-  }, [isMenuOpen])
 
   return (
     <header className="mx-mobile my-10 flex items-center justify-between">

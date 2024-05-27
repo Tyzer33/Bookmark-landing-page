@@ -9,9 +9,11 @@ function NavMenu({ setIsMenuOpen }: Props) {
     const root = document.body.querySelector('div#root')
 
     root?.setAttribute('inert', 'true')
+    document.body.classList.add('overflow-hidden')
 
     return () => {
       root?.removeAttribute('inert')
+      document.body.classList.remove('overflow-hidden')
     }
   }, [])
 
