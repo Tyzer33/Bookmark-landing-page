@@ -24,7 +24,7 @@ function Features() {
             <TabButton
               key={tab.id}
               name={tab.button}
-              selected={selectedTab.button}
+              isSelected={tab.id === selectedTab.id}
               handleClick={() => setSelectedTab(tab)}
             />
           ))}
