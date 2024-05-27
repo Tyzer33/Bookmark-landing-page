@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ArrowIcon from './ArrowIcon'
+import { twJoin } from 'tailwind-merge'
 
 function Dropdown({ children, title }: Props) {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,10 @@ function Dropdown({ children, title }: Props) {
         <ArrowIcon isActive={isOpen} />
       </button>
       <div
-        className={`grid overflow-hidden ${isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
+        className={twJoin(
+          'grid overflow-hidden',
+          isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]',
+        )}
       >
         <div className="overflow-hidden">
           <p className="mb-7 mr-6 mt-4 whitespace-break-spaces leading-[1.875rem] tracking-[0.015em]">

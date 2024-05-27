@@ -1,3 +1,4 @@
+import { twJoin } from 'tailwind-merge'
 import { useNumOfLines } from '../customHooks'
 
 function TitleAndDescription({
@@ -10,7 +11,10 @@ function TitleAndDescription({
 
   return (
     <div
-      className={`mx-mobile space-y-4 ${lineCount > 1 ? 'space-y-4' : 'space-y-[.625rem]'}`}
+      className={twJoin(
+        'mx-mobile',
+        lineCount > 1 ? 'space-y-4' : 'space-y-[.625rem]',
+      )}
     >
       <Type id={id} ref={lineRef}>
         {title}

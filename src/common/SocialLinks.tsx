@@ -1,10 +1,14 @@
 import twitterIcon from '../assets/icon-twitter.svg'
 import facebookIcon from '../assets/icon-facebook.svg'
+import { twMerge } from 'tailwind-merge'
 
 function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
   return (
     <Tag
-      className={`center flex items-center justify-center gap-10 ${className}`}
+      className={twMerge(
+        'center flex items-center justify-center gap-10',
+        className,
+      )}
     >
       <a href="http://facebook.com">
         <img className="w-6" src={facebookIcon} alt="facebook icon" />
