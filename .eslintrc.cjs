@@ -34,7 +34,9 @@ module.exports = {
     ],
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: true, allowModules: ['tailwind-merge'] },
+      {
+        devDependencies: true,
+      },
     ],
   },
 }
