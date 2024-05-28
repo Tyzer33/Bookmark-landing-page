@@ -9,15 +9,15 @@ import illustrationFeaturesTab3 from './assets/illustration-features-tab-3.svg'
 export const navLinks = [
   {
     id: 1,
-    name: 'Features',
+    name: 'FEATURES',
   },
   {
     id: 2,
-    name: 'Pricing',
+    name: 'PRICING',
   },
   {
     id: 3,
-    name: 'Contact',
+    name: 'CONTACT',
   },
 ]
 

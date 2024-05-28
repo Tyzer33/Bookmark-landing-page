@@ -7,7 +7,7 @@ function NavLinks({ ulClassName = '', liClassName = '' }: Props) {
       <ul className={ulClassName}>
         {navLinks.map(({ id, name }) => (
           <li key={id} className={liClassName}>
-            <a href="#">{name.toUpperCase()}</a>
+            <a href="#">{name}</a>
           </li>
         ))}
       </ul>
