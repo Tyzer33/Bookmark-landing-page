@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { navLinks } from '../data'
 
 function NavLinks({ ulClassName = '', liClassName = '' }: Props) {
@@ -6,7 +7,7 @@ function NavLinks({ ulClassName = '', liClassName = '' }: Props) {
       <ul className={ulClassName}>
         {navLinks.map(({ id, name }) => (
           <li key={id} className={liClassName}>
-            <a href={`#${name}`}>{name.toUpperCase()}</a>
+            <a href="#">{name.toUpperCase()}</a>
           </li>
         ))}
       </ul>
