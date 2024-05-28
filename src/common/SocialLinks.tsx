@@ -1,6 +1,6 @@
+import { twMerge } from 'tailwind-merge'
 import twitterIcon from '../assets/icon-twitter.svg'
 import facebookIcon from '../assets/icon-facebook.svg'
-import { twMerge } from 'tailwind-merge'
 
 function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
   return (

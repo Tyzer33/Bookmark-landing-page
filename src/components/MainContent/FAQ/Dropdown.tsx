@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ArrowIcon from './ArrowIcon'
 import { twJoin } from 'tailwind-merge'
+import ArrowIcon from './ArrowIcon'
 
 function Dropdown({ children, title }: Props) {
   const [isOpen, setIsOpen] = useState(false)
