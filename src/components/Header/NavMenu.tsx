@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import closeIcon from '../../assets/icon-close.svg'
 import BookmarkLogo from '../../common/BookmarkLogo'
 import SocialLinks from '../../common/SocialLinks'
-import { navLinks } from '../../data'
+import NavLinks from '../../common/NavLinks'
 
 function NavMenu({ setIsMenuOpen }: Props) {
   useEffect(() => {
@@ -26,15 +26,10 @@ function NavMenu({ setIsMenuOpen }: Props) {
         </button>
       </header>
       <div className="flex-1">
-        <nav>
-          <ul className="divide-y-1 divide-secondary border-y-1 border-secondary">
-            {navLinks.map(({ id, name }) => (
-              <li key={id} className="py-4 text-center text-xl">
-                <a href={`#${name}`}>{name.toUpperCase()}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <NavLinks
+          ulClassName="divide-y-1 divide-secondary border-y-1 border-secondary text-center text-xl"
+          liClassName="py-4"
+        />
         <button
           className="mt-6 w-full rounded-md border-2 border-current py-2 text-xl font-medium"
           type="button"
