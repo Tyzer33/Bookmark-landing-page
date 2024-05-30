@@ -36,6 +36,9 @@ export default {
       margin: {
         mobile: '2rem',
       },
+      padding: {
+        mobile: '2rem',
+      },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
       },
