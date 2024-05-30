@@ -10,7 +10,7 @@ function Features() {
 
   return (
     <section
-      className="mt-[9.375rem] space-y-10"
+      className="mt-[9.375rem] w-full space-y-10 lg:mt-[5.5rem]"
       aria-labelledby="featuresTitle"
     >
       <TitleAndDescription id="featuresTitle" title="Features">
@@ -18,8 +18,8 @@ function Features() {
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </TitleAndDescription>
-      <div className="space-y-[4.5rem]">
-        <div className="mx-mobile flex flex-col divide-y-1 divide-primary border-y-1 border-primary">
+      <div className="w-full space-y-[4.5rem]">
+        <div className="itemx mx-mobile flex justify-center border-primary max-lg:flex-col max-lg:border-t-1">
           {tabs.map((tab) => (
             <TabButton
               key={tab.id}
