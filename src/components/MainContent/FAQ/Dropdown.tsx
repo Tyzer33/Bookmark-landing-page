@@ -6,9 +6,9 @@ function Dropdown({ children, title }: Props) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="flex flex-col border-b-1 border-primary text-left">
+    <div className="flex max-w-[33.875rem] flex-col border-b-1 border-primary text-left">
       <button
-        className="relative flex items-center justify-between pb-[1.125rem] pt-[1.625rem] text-secondary"
+        className="relative flex items-center justify-between pb-[1.125rem] pt-[1.625rem] text-secondary lg:pb-4 lg:pt-5 lg:text-lg"
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
       >
@@ -22,7 +22,7 @@ function Dropdown({ children, title }: Props) {
         )}
       >
         <div className="overflow-hidden">
-          <p className="mb-7 mr-6 mt-4 whitespace-break-spaces leading-[1.875rem] tracking-[0.015em]">
+          <p className="mb-7 mr-6 mt-4 whitespace-break-spaces leading-[1.875rem] tracking-[0.015em] lg:mb-[1.875rem] lg:mr-0 lg:text-[1.0625rem] lg:leading-[2.25rem] lg:-tracking-[0.02em]">
             {children}
           </p>
         </div>
