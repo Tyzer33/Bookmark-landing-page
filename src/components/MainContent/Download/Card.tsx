@@ -1,12 +1,20 @@
+import { twMerge } from 'tailwind-merge'
 import dots from '../../../assets/bg-dots.svg'
 import DefaultButton from '../../../common/DefaultButton'
 
-function Card({ browser, logo, minVersion }: Props) {
+function Card({ className = '', browser, logo, minVersion }: Props) {
   return (
-    <div className="flex flex-col items-center rounded-xl shadow-lg shadow-default">
+    <div
+      className={twMerge(
+        'flex flex-col items-center rounded-xl shadow-lg shadow-default',
+        className,
+      )}
+    >
       <img className="mb-[1.875rem] mt-12" src={logo} alt="" />
-      <h3 className="text-xl font-medium text-secondary ">Add to {browser}</h3>
-      <p className="mb-[2.125rem] mt-1">Minimum version {minVersion}</p>
+      <h4 className="text-xl font-medium text-secondary ">Add to {browser}</h4>
+      <p className="mb-[2.125rem] mt-1 text-[.9375rem] leading-[1.5625rem]">
+        Minimum version {minVersion}
+      </p>
       <img src={dots} alt="" />
       <DefaultButton className="m-6 self-stretch">
         Add & Install Extension
@@ -17,6 +25,7 @@ function Card({ browser, logo, minVersion }: Props) {
 export default Card
 
 type Props = {
+  className?: string
   browser: string
   logo: string
   minVersion: number
