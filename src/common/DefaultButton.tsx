@@ -6,17 +6,25 @@ const themes = {
   accent: 'bg-accent text-tertiary',
 }
 
-function DefaultButton({ children, className = '', theme = 'primary' }: Props) {
+function DefaultButton({
+  children,
+  className = '',
+  theme = 'primary',
+  size = 'normal',
+}: Props) {
   return (
-    <div
+    <button
       className={twMerge(
-        'rounded-md px-4 py-3 shadow-lg shadow-default',
-        className,
+        'rounded-md py-3 shadow-lg shadow-default',
+        size === 'small' && 'px-8 text-[.8125rem] leading-4 tracking-[0.11em]',
+        size === 'normal' && 'px-4 text-[.9375rem] leading-6 lg:px-6',
         themes[theme],
+        className,
       )}
+      type="button"
     >
       {children}
-    </div>
+    </button>
   )
 }
 export default DefaultButton
@@ -25,4 +33,5 @@ type Props = {
   children: React.ReactNode
   className?: string
   theme?: 'primary' | 'secondary' | 'accent'
+  size?: 'normal' | 'small'
 }
