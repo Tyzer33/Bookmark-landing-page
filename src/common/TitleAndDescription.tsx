@@ -12,7 +12,7 @@ function TitleAndDescription({
   return (
     <div
       className={twJoin(
-        'mx-mobile',
+        'max-w-[33.5rem] max-lg:mx-mobile lg:mx-auto lg:space-y-6',
         lineCount > 1 ? 'space-y-4' : 'space-y-[.625rem]',
       )}
     >
