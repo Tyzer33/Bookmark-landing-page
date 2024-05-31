@@ -2,7 +2,7 @@ import DefaultButton from '../../common/DefaultButton'
 
 function Newsletter() {
   return (
-    <section className="bg-secondary px-8 pb-[3.75rem] pt-[4.5rem] text-center text-tertiary lg:pb-[4.375rem] lg:pt-[4.625rem]">
+    <section className="px-mobile bg-secondary pb-[3.75rem] pt-[4.5rem] text-center text-tertiary lg:pb-[4.375rem] lg:pt-[4.625rem]">
       <div className="mx-auto max-w-[27.625rem] space-y-8 lg:space-y-9">
         <div className="space-y-3 lg:space-y-9">
           <p className="text-[.8125rem] font-medium tracking-[0.3em] lg:tracking-[0.4em]">
