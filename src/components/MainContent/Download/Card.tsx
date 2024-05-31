@@ -6,7 +6,7 @@ function Card({ className = '', browser, logo, minVersion }: Props) {
   return (
     <div
       className={twMerge(
-        'flex flex-col items-center rounded-xl shadow-lg shadow-default',
+        'mx-auto flex flex-col items-center rounded-xl shadow-lg shadow-default',
         className,
       )}
     >
