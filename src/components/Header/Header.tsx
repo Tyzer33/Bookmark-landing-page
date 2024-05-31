@@ -8,7 +8,7 @@ function Header() {
   const { isAboveLg, isBelowLg } = useBreakpoint('lg')
 
   return (
-    <header className="px-mobile flex items-center justify-between py-10 lg:px-[10.25rem] lg:py-12">
+    <header className="mx-mobile my-10 flex items-center justify-between lg:mx-[10.25rem] lg:my-12">
       <BookmarkLogo className="lg:ml-[.375rem]" />
       {isBelowLg && <NavMenuButton />}
       {isAboveLg && (
