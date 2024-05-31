@@ -18,8 +18,8 @@ function Features() {
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </TitleAndDescription>
-      <div className="w-full space-y-[4.5rem]">
-        <div className="itemx mx-mobile flex justify-center border-primary max-lg:flex-col max-lg:border-t-1">
+      <div className="space-y-[4.5rem]">
+        <div className="flex justify-center border-primary max-lg:flex-col max-lg:border-t-1">
           {tabs.map((tab) => (
             <TabButton
               key={tab.id}
