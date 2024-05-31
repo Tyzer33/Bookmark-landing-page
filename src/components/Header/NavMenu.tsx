@@ -18,7 +18,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
   }, [])
 
   return (
-    <section className="fixed inset-0 flex flex-col items-stretch bg-tertiary/95 px-8 tracking-widest text-tertiary">
+    <section className="px-mobile fixed inset-0 flex flex-col items-stretch bg-tertiary/95 tracking-widest text-tertiary">
       <header className="my-10 flex justify-between">
         <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>
