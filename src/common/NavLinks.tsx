@@ -11,7 +11,7 @@ function NavLinks({
     <nav className={navClassName}>
       <ul
         className={twMerge(
-          'flex gap-12 text-[.8125rem] leading-4 tracking-[0.11em]',
+          'gap-12 text-[.8125rem] leading-4 tracking-[0.11em] lg:flex',
           ulClassName,
         )}
       >
