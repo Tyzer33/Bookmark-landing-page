@@ -35,9 +35,14 @@ export default {
       },
       margin: {
         mobile: '2rem',
+        desktop: '7.5rem',
       },
       padding: {
         mobile: '2rem',
+        desktop: '7.5rem',
+      },
+      maxWidth: {
+        container: '69.375rem',
       },
       fontFamily: {
         default: ['Rubik', 'sans-serif'],
