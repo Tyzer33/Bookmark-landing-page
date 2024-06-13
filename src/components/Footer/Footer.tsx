@@ -3,7 +3,7 @@ import Newsletter from './Newsletter'
 
 function Footer() {
   return (
-    <footer>
+    <footer className="self-stretch">
       <Newsletter />
       <MainFooter />
     </footer>
