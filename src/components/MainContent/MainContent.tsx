@@ -5,7 +5,7 @@ import Presentation from './Presentation/Presentation'
 
 function MainContent() {
   return (
-    <main className="mb-[7.75rem] flex flex-col items-center overflow-x-hidden px-mobile text-center lg:mb-[9.375rem]">
+    <main className="lg:px-desktop flex flex-col items-center self-stretch overflow-x-hidden px-mobile pb-[7.75rem] text-center lg:pb-[9.375rem]">
       <Presentation />
       <Features />
       <Download />
