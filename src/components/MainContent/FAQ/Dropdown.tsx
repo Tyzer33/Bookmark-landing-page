@@ -22,7 +22,7 @@ function Dropdown({ children, title }: Props) {
         )}
       >
         <div className="overflow-hidden">
-          <p className="mb-7 mr-6 mt-4 whitespace-break-spaces leading-[1.875rem] tracking-[0.015em] lg:mb-[1.875rem] lg:mr-0 lg:text-[1.0625rem] lg:leading-[2.25rem] lg:-tracking-[0.02em]">
+          <p className="mb-7 mr-6 mt-4 whitespace-break-spaces leading-[1.875rem] tracking-[0.015em] lg:mb-[1.875rem] lg:mr-0 lg:text-[1.0625rem]/[2.25rem] lg:-tracking-[0.02em]">
             {children}
           </p>
         </div>

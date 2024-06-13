@@ -16,8 +16,8 @@ function DefaultButton({
     <button
       className={twMerge(
         'rounded-md py-3 shadow-lg shadow-default',
-        size === 'small' && 'px-8 text-[.8125rem] leading-4 tracking-[0.11em]',
-        size === 'normal' && 'px-4 text-[.9375rem] leading-6 lg:px-6',
+        size === 'small' && 'px-8 text-[.8125rem]/4 tracking-[0.11em]',
+        size === 'normal' && 'px-4 text-[.9375rem]/6 lg:px-6',
         themes[theme],
         className,
       )}

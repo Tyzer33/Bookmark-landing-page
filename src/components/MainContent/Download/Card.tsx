@@ -12,7 +12,7 @@ function Card({ className = '', browser, logo, minVersion }: Props) {
     >
       <img className="mb-[1.875rem] mt-12" src={logo} alt="" />
       <h4 className="text-xl font-medium text-secondary ">Add to {browser}</h4>
-      <p className="mb-[2.125rem] mt-1 text-[.9375rem] leading-[1.5625rem]">
+      <p className="mb-[2.125rem] mt-1 text-[.9375rem]/[1.5625rem]">
         Minimum version {minVersion}
       </p>
       <img src={dots} alt="" />

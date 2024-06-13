@@ -23,7 +23,7 @@
   }
 
   body {
-    @apply bg-primary font-default text-[0.9375rem] leading-[1.5625rem] text-primary lg:text-lg;
+    @apply bg-primary font-default text-[0.9375rem]/[1.5625rem] text-primary lg:text-lg;
   }
 
   h1,
@@ -36,11 +36,11 @@
   }
 
   h1 {
-    @apply text-3xl leading-10 lg:text-5xl lg:leading-[3.25rem];
+    @apply text-3xl/10 lg:text-5xl/[3.25rem];
   }
 
   h2,
   h3 {
-    @apply text-2xl leading-[1.875rem] lg:text-[2rem] lg:leading-[2.375rem];
+    @apply text-2xl/[1.875rem] lg:text-[2rem]/[2.375rem];
   }
 }
