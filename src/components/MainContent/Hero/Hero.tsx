@@ -3,7 +3,7 @@ import DefaultButton from '../../../common/DefaultButton'
 import TitleAndDescription from '../../../common/TitleAndDescription'
 import BackgroundShape from '../../../common/BackgroundShape'
 
-function Presentation() {
+function Hero() {
   return (
     <section
       className="mt-10 flex flex-col justify-center gap-12 lg:mt-14 lg:flex-row-reverse lg:items-start lg:gap-20"
@@ -27,4 +27,4 @@ function Presentation() {
     </section>
   )
 }
-export default Presentation
+export default Hero
