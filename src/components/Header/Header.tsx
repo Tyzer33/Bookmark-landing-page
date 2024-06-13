@@ -8,17 +8,22 @@ function Header() {
   const { isAboveLg, isBelowLg } = useBreakpoint('lg')
 
   return (
-    <header className="mx-mobile my-10 flex items-center justify-between lg:mx-[10.25rem] lg:my-12">
-      <BookmarkLogo className="lg:ml-[.375rem]" />
-      {isBelowLg && <NavMenuButton />}
-      {isAboveLg && (
-        <>
-          <NavLinks navClassName="ml-auto mr-12" ulClassName="text-secondary" />
-          <DefaultButton theme="accent" size="small">
-            LOGIN
-          </DefaultButton>
-        </>
-      )}
+    <header className="flex w-full justify-center px-mobile py-10 lg:px-desktop lg:py-12">
+      <div className="flex w-full max-w-container items-center justify-between">
+        <BookmarkLogo className="lg:ml-[.375rem]" />
+        {isBelowLg && <NavMenuButton />}
+        {isAboveLg && (
+          <>
+            <NavLinks
+              navClassName="flex-1 mr-12"
+              ulClassName="justify-end text-secondary"
+            />
+            <DefaultButton theme="accent" size="small">
+              LOGIN
+            </DefaultButton>
+          </>
+        )}
+      </div>
     </header>
   )
 }
