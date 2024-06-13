@@ -13,7 +13,7 @@ function Download() {
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.
       </TitleAndDescription>
-      <div className="mx-4 flex items-start gap-10 max-lg:flex-col lg:gap-8">
+      <div className="flex items-start gap-10 max-lg:mx-4 max-lg:flex-col lg:gap-8">
         {download.map(({ id, logo, browser, minVersion }, index) => (
           <Card
             className={twJoin(
