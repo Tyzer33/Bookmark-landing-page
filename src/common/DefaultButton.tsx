@@ -11,6 +11,7 @@ function DefaultButton({
   className = '',
   theme = 'primary',
   size = 'normal',
+  type = 'button',
 }: Props) {
   return (
     <button
@@ -21,7 +22,7 @@ function DefaultButton({
         themes[theme],
         className,
       )}
-      type="button"
+      type={type === 'submit' ? 'submit' : 'button'}
     >
       {children}
     </button>
@@ -34,4 +35,5 @@ type Props = {
   className?: string
   theme?: 'primary' | 'secondary' | 'accent'
   size?: 'normal' | 'small'
+  type?: 'button' | 'submit'
 }
