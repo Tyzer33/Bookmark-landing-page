@@ -8,6 +8,7 @@ export default {
         secondary: 'hsla(var(--bg-secondary))',
         tertiary: 'hsla(var(--bg-tertiary))',
         accent: 'hsla(var(--bg-accent))',
+        error: 'hsla(var(--error))',
       },
       stroke: {
         primary: 'hsla(var(--bg-primary))',
@@ -29,6 +30,7 @@ export default {
       borderColor: {
         primary: 'hsla(var(--border-primary))',
         secondary: 'hsla(var(--border-secondary))',
+        error: 'hsla(var(--error))',
       },
       boxShadowColor: {
         default: 'hsla(var(--shadow))',
