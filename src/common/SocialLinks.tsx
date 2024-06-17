@@ -1,6 +1,5 @@
 import { twMerge } from 'tailwind-merge'
-import twitterIcon from '../assets/icon-twitter.svg'
-import facebookIcon from '../assets/icon-facebook.svg'
+import { FacebookLogo, TwitterLogo } from './SocialLogos'
 
 function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
   return (
@@ -11,10 +10,10 @@ function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
       )}
     >
       <a href="http://facebook.com">
-        <img className="w-6" src={facebookIcon} alt="facebook icon" />
+        <FacebookLogo />
       </a>
       <a href="http://twitter.com">
-        <img className="w-6" src={twitterIcon} alt="twitter icon" />
+        <TwitterLogo />
       </a>
     </Tag>
   )
