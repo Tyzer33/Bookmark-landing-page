@@ -1,6 +1,6 @@
 import { twJoin } from 'tailwind-merge'
 
-function BackgroundShape({ image, variant }: Props) {
+function ImgBackgroundShape({ image, variant }: Props) {
   return (
     <div
       className={twJoin(
@@ -16,7 +16,7 @@ function BackgroundShape({ image, variant }: Props) {
     </div>
   )
 }
-export default BackgroundShape
+export default ImgBackgroundShape
 
 type Props = {
   image: string

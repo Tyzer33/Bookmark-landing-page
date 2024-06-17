@@ -1,7 +1,7 @@
 import illustration from '../../../assets/illustration-hero.svg'
 import DefaultButton from '../../../common/DefaultButton'
 import TitleAndDescription from '../../../common/TitleAndDescription'
-import BackgroundShape from '../../../common/BackgroundShape'
+import ImgBackgroundShape from '../../../common/ImgBackgroundShape'
 
 function Hero() {
   return (
@@ -9,7 +9,7 @@ function Hero() {
       className="mt-10 flex flex-col justify-center gap-12 lg:mt-14 lg:flex-row-reverse lg:items-start lg:gap-20"
       aria-labelledby="presentationTitle"
     >
-      <BackgroundShape image={illustration} variant="right" />
+      <ImgBackgroundShape image={illustration} variant="right" />
       <div className="m-auto max-w-[30rem] space-y-8 lg:mt-[clamp(0rem,-15.7055rem+24.5399vi,5rem)] lg:text-left">
         <TitleAndDescription
           id="presentationTitle"
