@@ -37,6 +37,9 @@ export default {
       boxShadowColor: {
         default: 'hsla(var(--shadow))',
       },
+      outlineColor: {
+        error: 'hsla(var(--error))',
+      },
       margin: {
         mobile: '2rem',
         desktop: '7.5rem',
