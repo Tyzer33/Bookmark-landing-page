@@ -1,6 +1,6 @@
 import { twMerge } from 'tailwind-merge'
 
-const themes = {
+const themesClassnames = {
   primary: 'bg-secondary text-tertiary',
   secondary: 'bg-tertiary/5 text-secondary',
   accent: 'bg-accent text-tertiary',
@@ -19,7 +19,7 @@ function DefaultButton({
         'rounded-md py-3 shadow-lg shadow-default',
         size === 'small' && 'px-8 text-[.8125rem]/4 tracking-[0.11em]',
         size === 'normal' && 'px-4 text-[.9375rem]/6 lg:px-6',
-        themes[theme],
+        themesClassnames[theme],
         className,
       )}
       type={type === 'submit' ? 'submit' : 'button'}
