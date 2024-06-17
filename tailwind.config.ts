@@ -26,6 +26,7 @@ export default {
         primary: 'hsla(var(--text-primary))',
         secondary: 'hsla(var(--text-secondary))',
         tertiary: 'hsla(var(--text-tertiary))',
+        quaternary: 'hsla(var(--text-quaternary))',
         accent: 'hsla(var(--text-accent))',
       },
       borderColor: {
