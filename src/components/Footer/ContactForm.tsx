@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { twMerge } from 'tailwind-merge'
+import { twJoin } from 'tailwind-merge'
 import DefaultButton from '../../common/DefaultButton'
 import errorIcon from '../../assets/icon-error.svg'
 
@@ -29,21 +29,17 @@ function ContactForm() {
       noValidate
     >
       <div
-        className={twMerge(
-          'flex-1 rounded-md text-secondary',
+        className={twJoin(
+          'relative flex-1 rounded-md text-secondary lg:rounded-b-none',
           !IsValid && 'bg-error',
         )}
       >
-        <div
-          className={twMerge(
-            'relative w-full overflow-hidden rounded-md',
-            !IsValid && 'border-2 border-b-0 border-error',
-          )}
-        >
+        <div className="relative">
           <input
-            className={twMerge(
-              'w-full truncate px-5 py-3',
-              !IsValid && 'pr-10',
+            className={twJoin(
+              'w-full truncate rounded-md px-5 py-3',
+              !IsValid &&
+                'outline-error pr-10 outline outline-2 -outline-offset-2',
             )}
             ref={emailRef}
             type="email"
@@ -59,7 +55,12 @@ function ContactForm() {
           )}
         </div>
         {!IsValid && (
-          <p className="px-3 py-[.375rem] text-left text-[.625rem] font-medium italic leading-3 tracking-wide text-tertiary">
+          <p
+            className={twJoin(
+              'px-3 py-[.375rem] text-left text-[.625rem] font-medium italic leading-3 tracking-wide text-tertiary',
+              'w-full rounded-b-md bg-error pb-[.375rem] pt-1 lg:absolute',
+            )}
+          >
             Whoops, make sure it’s an email
           </p>
         )}
