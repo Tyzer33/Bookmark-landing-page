@@ -17,7 +17,9 @@ function NavLinks({
       >
         {navLinks.map(({ id, name }) => (
           <li key={id} className={liClassName}>
-            <a href="#">{name}</a>
+            <a className="hover:text-accent cursor-pointer" href="#">
+              {name}
+            </a>
           </li>
         ))}
       </ul>
