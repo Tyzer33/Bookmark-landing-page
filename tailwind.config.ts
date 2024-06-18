@@ -57,6 +57,21 @@ export default {
       borderWidth: {
         1: '1px',
       },
+      animation: {
+        slidein: 'slidein 300ms ease-in-out',
+      },
+      keyframes: {
+        slidein: {
+          '0%': {
+            transform: 'translateX(-75%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateX(0)',
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],
