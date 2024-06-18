@@ -59,6 +59,7 @@ export default {
       },
       animation: {
         slidein: 'slidein 300ms ease-in-out',
+        error: 'error 500ms ease-in-out',
       },
       keyframes: {
         slidein: {
@@ -69,6 +70,27 @@ export default {
           '100%': {
             transform: 'translateX(0)',
             opacity: 1,
+          },
+        },
+        error: {
+          '0%, 100%': {
+            transform: 'rotate(0deg)',
+            transformOrigin: '50% 50%',
+          },
+          '10%': {
+            transform: 'rotate(3deg)',
+          },
+          '20%, 40%, 60%': {
+            transform: 'rotate(-5deg)',
+          },
+          '30%, 50%, 70%': {
+            transform: 'rotate(5deg)',
+          },
+          '80%': {
+            transform: 'rotate(-3deg)',
+          },
+          '90%': {
+            transform: 'rotate(3deg)',
           },
         },
       },
