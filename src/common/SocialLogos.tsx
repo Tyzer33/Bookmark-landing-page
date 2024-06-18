@@ -5,7 +5,7 @@ function SocialSvg({ children }: Props) {
       height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      className="fill-primary hover:fill-accent"
+      className="fill-primary transition-colors hover:fill-accent"
     >
       {children}
     </svg>
