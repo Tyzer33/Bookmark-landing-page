@@ -17,7 +17,7 @@ function Dropdown({ children, title }: Props) {
       </button>
       <div
         className={twJoin(
-          'grid overflow-hidden',
+          'grid overflow-hidden transition-[grid-template-rows] duration-300',
           isOpen ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]',
         )}
       >
