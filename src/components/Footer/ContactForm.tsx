@@ -39,13 +39,14 @@ function ContactForm() {
             className={twJoin(
               'w-full truncate rounded-md px-5 py-3',
               !IsValid &&
-                'outline-error pr-10 outline outline-2 -outline-offset-2',
+                'pr-10 outline outline-2 -outline-offset-2 outline-error',
             )}
             ref={emailRef}
             type="email"
             name="email"
             placeholder="Enter your email address"
             onChange={() => setIsValid(true)}
+            autoComplete="email"
           />
           {!IsValid && (
             <div
