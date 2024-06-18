@@ -31,7 +31,7 @@ function ContactForm() {
       <div
         className={twJoin(
           'relative flex-1 rounded-md text-secondary lg:rounded-b-none',
-          !IsValid && 'bg-error',
+          !IsValid && 'animate-error bg-error',
         )}
       >
         <div className="relative">
