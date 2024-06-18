@@ -16,8 +16,8 @@ function DefaultButton({
   return (
     <button
       className={twMerge(
-        'rounded-md py-3 shadow-lg shadow-default',
-        'hover:bg-primary hover:outline hover:outline-2 hover:-outline-offset-2 hover:outline-current',
+        'rounded-md py-3 shadow-lg shadow-default outline outline-2 -outline-offset-2 outline-transparent transition-[outline,color,background-color]',
+        'hover:bg-primary hover:outline-current',
         size === 'small' && 'px-8 text-[.8125rem]/4 tracking-[0.11em]',
         size === 'normal' && 'px-4 text-[.9375rem]/6 lg:px-6',
         themesClassnames[theme],
