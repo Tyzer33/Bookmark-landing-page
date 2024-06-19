@@ -6,6 +6,7 @@ function NavLinks({
   navClassName = '',
   ulClassName = '',
   liClassName = '',
+  extendClickArea = false,
 }: Props) {
   return (
     <nav className={navClassName}>
@@ -18,7 +19,10 @@ function NavLinks({
         {navLinks.map(({ id, name }) => (
           <li key={id} className={liClassName}>
             <a
-              className="relative cursor-pointer transition-colors after:absolute after:-inset-[1em] hover:text-accent"
+              className={twMerge(
+                'cursor-pointer transition-colors hover:text-accent',
+                extendClickArea && 'relative after:absolute after:-inset-[1em]',
+              )}
               href="#"
             >
               {name}
@@ -35,4 +39,5 @@ type Props = {
   navClassName?: string
   ulClassName?: string
   liClassName?: string
+  extendClickArea?: boolean
 }
