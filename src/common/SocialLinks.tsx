@@ -10,13 +10,13 @@ function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
       )}
     >
       <a
-        className="fill-primary transition-colors hover:fill-accent"
+        className="relative fill-primary transition-colors after:absolute after:-inset-[0.5em] hover:fill-accent"
         href="http://facebook.com"
       >
         <FacebookLogo />
       </a>
       <a
-        className="fill-primary transition-colors hover:fill-accent"
+        className="relative fill-primary transition-colors after:absolute after:-inset-[0.5em] hover:fill-accent"
         href="http://twitter.com"
       >
         <TwitterLogo />
