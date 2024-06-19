@@ -9,10 +9,16 @@ function SocialLinks({ className = '', tag: Tag = 'div' }: Props) {
         className,
       )}
     >
-      <a href="http://facebook.com">
+      <a
+        className="fill-primary transition-colors hover:fill-accent"
+        href="http://facebook.com"
+      >
         <FacebookLogo />
       </a>
-      <a href="http://twitter.com">
+      <a
+        className="fill-primary transition-colors hover:fill-accent"
+        href="http://twitter.com"
+      >
         <TwitterLogo />
       </a>
     </Tag>
