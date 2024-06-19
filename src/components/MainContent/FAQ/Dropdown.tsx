@@ -8,7 +8,7 @@ function Dropdown({ children, title }: Props) {
   return (
     <div className="flex max-w-[33.875rem] flex-col border-b-1 border-primary text-left">
       <button
-        className="relative flex items-center justify-between pb-[1.125rem] pt-[1.625rem] text-secondary transition-colors hover:text-accent lg:pb-4 lg:pt-5 lg:text-lg"
+        className="relative flex items-center justify-between pb-[1.125rem] pt-[1.625rem] text-secondary transition-colors hover:text-accent focus-visible:text-accent lg:pb-4 lg:pt-5 lg:text-lg"
         type="button"
         onClick={() => setIsOpen((prev) => !prev)}
       >
