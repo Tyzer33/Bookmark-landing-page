@@ -18,7 +18,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
   }, [])
 
   return (
-    <section className="px-mobile fixed inset-0 flex flex-col items-stretch bg-tertiary/95 tracking-widest text-tertiary">
+    <section className="fixed inset-0 flex flex-col items-stretch bg-tertiary/95 px-mobile tracking-widest text-tertiary">
       <header className="my-10 flex justify-between">
         <BookmarkLogo theme="full-light" />
         <button type="button" onClick={() => setIsMenuOpen(false)}>
@@ -28,7 +28,7 @@ function NavMenu({ setIsMenuOpen }: Props) {
       <div className="flex-1">
         <NavLinks
           ulClassName="divide-y-1 divide-secondary border-y-1 border-secondary text-center text-xl"
-          liClassName="py-4"
+          aClassName="w-full py-4 block"
         />
         <button
           className="mt-6 w-full rounded-md border-2 border-current py-2 text-xl font-medium"
