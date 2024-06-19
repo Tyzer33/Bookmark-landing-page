@@ -17,6 +17,7 @@ function Header() {
             <NavLinks
               navClassName="flex-1 mr-12"
               ulClassName="justify-end text-secondary"
+              extendClickArea
             />
             <DefaultButton theme="accent" size="small">
               LOGIN
