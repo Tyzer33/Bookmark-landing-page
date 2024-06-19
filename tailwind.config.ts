@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss'
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -65,11 +66,11 @@ export default {
         slidein: {
           '0%': {
             transform: 'translateX(-75%)',
-            opacity: 0,
+            opacity: '0',
           },
           '100%': {
             transform: 'translateX(0)',
-            opacity: 1,
+            opacity: '1',
           },
         },
         error: {
@@ -97,4 +98,4 @@ export default {
     },
   },
   plugins: [],
-}
+} satisfies Config
