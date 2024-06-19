@@ -21,7 +21,7 @@ function NavLinks({
           <li key={id} className={liClassName}>
             <a
               className={twMerge(
-                'cursor-pointer transition-colors hover:text-accent',
+                'cursor-pointer transition-colors hover:text-accent focus-visible:text-accent',
                 extendClickArea && 'relative after:absolute after:-inset-[1em]',
                 aClassName,
               )}
